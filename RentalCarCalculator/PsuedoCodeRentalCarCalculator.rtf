@@ -11,10 +11,8 @@
 \
 -What is the number of days for the rental? (Integer) \
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 -What is your current age? Please enter a whole number (Integer)\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
+-What is your current age? Please enter a whole number (Integer)\
+\
 -Do you want an electronic toll tag at $3.95 a day? (String)\
 \
 -Do you  want a GPS at $2.95 per day? (String)\
@@ -66,8 +64,16 @@ Your pick up date is PickUpDate. The total amount you will pay is TOTALCOST\
 13. Show the basic car rental, options cost, underage driver surcharge and total cost.\
 \
 \
+Test:\
 \
+Date	  	Age	Days To Rent Car	ETT?        GPS?       RSA?\
 \
+Input:  10/23/2022.     20	 3	yes	no	no\
+Expected Output:  11.85+89.97+26.99 = 128.81\
+\
+Input: 10/23/2024	 26	4 	no	yes 	yes\
+Expected Output\
+			119.96+11.8+15.8 = 147.56\
 \
 \
 \
