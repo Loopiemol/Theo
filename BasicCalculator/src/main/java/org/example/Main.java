@@ -26,15 +26,15 @@ public class Main {
             }
         else if (option.equalsIgnoreCase("S")) {
             float result = firstNumber - secondNumber;
-            System.out.printf("%.2f + %.2f = %.2f", firstNumber, secondNumber, result);
+            System.out.printf("%.2f - %.2f = %.2f", firstNumber, secondNumber, result);
             }
         else if (option.equalsIgnoreCase("M")) {
              float result = firstNumber * secondNumber;
-            System.out.printf("%.2f + %.2f = %.2f", firstNumber, secondNumber, result);
+            System.out.printf("%.2f * %.2f = %.2f", firstNumber, secondNumber, result);
             }
         else if (option.equalsIgnoreCase("D")) {
             float result = firstNumber / secondNumber;
-            System.out.printf("%.2f + %.2f = %.2f", firstNumber, secondNumber, result);
+            System.out.printf("%.2f / %.2f = %.2f", firstNumber, secondNumber, result);
              //doesn't have else if because this is for everything else
             }
         else {
