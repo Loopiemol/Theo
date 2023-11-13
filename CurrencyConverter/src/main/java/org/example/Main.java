@@ -1,5 +1,6 @@
 package org.example;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 
 public class Main {
@@ -30,13 +31,18 @@ public class Main {
 
     public static void hello(String[] args) {
 
-        BigDecimal usdollars = new BigDecimal("2");
+        BigDecimal usdollars = new BigDecimal("2.00");
         BigDecimal converter = usdollars.multiply(USD_TO_EUR_RATE);
-        System.out.println("US dollars to Euros " + converter);
+        BigDecimal roundedValue = converter.setScale(2, RoundingMode.HALF_UP);
+        System.out.println("US dollars to Euros " +  roundedValue);
 
-        usdollars = new BigDecimal("2");
+
+        usdollars = new BigDecimal("2.00");
          converter = usdollars.multiply(GBP_TO_JPY_RATE);
-        System.out.println("US dollars to JPY " + converter);
+         roundedValue = converter.setScale(2, RoundingMode.HALF_UP);
+        System.out.println("US dollars to JPY " +   roundedValue);
+
+
     }
 
 
